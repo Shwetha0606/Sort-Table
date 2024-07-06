@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Sorting Table</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 style="text-align:center">Sort Table</h1>
+        <div>
+        <form id="userform" class="input-form">
+            <table class="form-details" style="align-items: center; padding-left: 6rem;">
+                <tr>
+                    <td style="border:none"><label>Roll No</label></td>
+                    <td style="border:none"><input type="text" id="rno" class="input" required></td>
+                </tr>
+                <tr>
+                    <td style="border:none"><label onclick="">Name</label></td>
+                    <td style="border:none"><input type="text" id="name" class="input" required></td>
+                </tr>
+                <tr>
+                    <td style="border:none"><label>Age</label></td>
+                    <td style="border:none"><input type="text" id="age" class="input" required></td>
+                </tr>
+                
+                    <tr><td style="border:none"><button type="submit" id="btn">Submit</button></td></tr>
+            </table>
+        </form>
+        </div>
+
+        <div class="display-table">
+        <table id="userTable" border="1">
+            <tr style="background-color: black; color:white">
+                <th onclick="sortTable('rollno')">Roll No</th>
+                <th onclick="sortTable('name')">Name</th>
+                <th onclick="sortTable('age')">Age</th>
+            </tr>
+        </table>
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>
